@@ -1,0 +1,67 @@
+body {
+  font-family: $main-font;
+  font-size: $paragraph-font-size;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: $paragraph-font-size;
+  color: $color-dark;
+}
+
+.logo--main {
+  font-family: $logo-font;
+  font-weight: $font-bold;
+  font-size: 2.6rem;
+}
+
+.section {
+  &__title {
+    &--main {
+      text-transform: uppercase;
+      color: $grey-middle-value;
+      font-weight: $font-medium;
+    }
+
+    &--bold {
+      text-transform: uppercase;
+      font-weight: $font-bold;
+      color: $grey-high-value;
+    }
+  }
+}
+
+.link {
+  &--primary {
+    font-size: inherit;
+  }
+  &--secondary {
+    font-size: inherit;
+    font-weight: $font-light;
+  }
+}

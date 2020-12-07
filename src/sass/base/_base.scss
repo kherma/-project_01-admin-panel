@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  // 1rem = 10px
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-main;
+  font-size: $paragraph-font-size;
+
+  &:hover {
+    color: $orange-light;
+    cursor: pointer;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  font-size: $paragraph-font-size;
+}
