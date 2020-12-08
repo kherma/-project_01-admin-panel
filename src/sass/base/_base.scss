@@ -17,12 +17,14 @@ body {
   box-sizing: border-box;
   height: 100%;
   overflow: auto;
+  background-color: $color-light;
 }
 
 a {
   text-decoration: none;
   color: $blue-main;
   font-size: $paragraph-font-size;
+  transition: all 0.3s;
 
   &:hover {
     color: $orange-light;
@@ -34,4 +36,31 @@ ul,
 ol {
   list-style: none;
   font-size: $paragraph-font-size;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+  fill: $grey-middle-value;
+}
+
+.interactive {
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.notification-orange {
+  &::after {
+    @include notification-icon($orange-light);
+  }
+}
+
+.notification-green {
+  &::after {
+    @include notification-icon($green-high-saturation);
+  }
 }

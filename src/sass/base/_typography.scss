@@ -31,28 +31,27 @@ h6 {
 
 p {
   font-size: $paragraph-font-size;
-  color: $color-dark;
+  color: $dark-low-value;
 }
 
 .logo--main {
   font-family: $logo-font;
   font-weight: $font-bold;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
+  color: $whiteness;
 }
 
-.section {
-  &__title {
-    &--main {
-      text-transform: uppercase;
-      color: $grey-middle-value;
-      font-weight: $font-medium;
-    }
+.text {
+  &--main {
+    text-transform: uppercase;
+    color: $grey-middle-value;
+    font-weight: $font-medium;
+  }
 
-    &--bold {
-      text-transform: uppercase;
-      font-weight: $font-bold;
-      color: $grey-high-value;
-    }
+  &--bold {
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    color: $grey-high-value;
   }
 }
 

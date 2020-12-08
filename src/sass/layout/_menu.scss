@@ -1,0 +1,67 @@
+.top__menu {
+  height: 8rem;
+  position: fixed;
+  width: 100%;
+
+  &--small {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: $dark-middle-value;
+
+    .hamburger {
+      .line {
+        width: 3rem;
+        height: 0.3rem;
+        background-color: $whiteness;
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  &--large {
+    @include mobile {
+      display: none;
+    }
+    @include mobile-landscape {
+      display: none;
+    }
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $whiteness;
+  }
+
+  &--item,
+  &--icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid $grey-low-value;
+  }
+
+  &--item {
+    justify-content: space-evenly;
+  }
+
+  &--icon {
+    justify-content: center;
+    .item--icon,
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}
+
+.item {
+  &--icon {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+  }
+}
