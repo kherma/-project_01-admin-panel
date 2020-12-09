@@ -1,5 +1,5 @@
 .page__articles {
-  margin-top: 9rem;
+  margin-top: 10rem;
   transition: all 0.5s ease-in-out;
   margin-left: 16.6%;
 
@@ -16,7 +16,8 @@
 }
 
 .page__article {
-  margin: 1rem;
+  margin: 2rem;
   height: 700px;
   background-color: #fff;
+  box-shadow: 0.3rem 0.3rem 1rem $grey-middle-value;
 }
