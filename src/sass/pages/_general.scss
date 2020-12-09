@@ -1,0 +1,100 @@
+.date__picker {
+  border: 1px solid $grey-low-value;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.3rem;
+  height: 4rem;
+  margin: 2rem 1rem;
+  flex-wrap: nowrap;
+
+  &--left,
+  &--right {
+    color: $grey-high-value;
+    padding: 0 5rem 0 1rem;
+    @include mobile {
+      padding: 0 1rem 0 1rem;
+    }
+  }
+
+  &--right {
+    border-left: 1px solid $grey-low-value;
+  }
+
+  &--icon {
+    margin: 0 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.chart__container {
+  flex-direction: column;
+  padding: 1rem;
+
+  .chart__description,
+  .chart__options,
+  .chart__main {
+    width: 100%;
+    margin: 2rem 0;
+    justify-content: center;
+  }
+
+  .chart__description {
+    &--row {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--item {
+      margin: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $grey-middle-value;
+      line-height: 2;
+    }
+
+    &--value {
+      color: $dark-low-value;
+      font-weight: $font-light;
+    }
+  }
+
+  .chart__options {
+    &--title {
+      margin: 2rem 1rem;
+
+      @include mobile {
+        margin: 2rem auto;
+      }
+    }
+
+    &--buttons {
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    &--signup {
+      @include chart-btn($blue-main);
+    }
+    &--ftd {
+      @include chart-btn($orange-dark);
+    }
+    &--earned {
+      @include chart-btn($green-middle-saturation);
+    }
+  }
+}
+
+.chart__main {
+  &--img {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    img {
+      object-fit: contain;
+      width: auto;
+      max-width: auto;
+      max-height: 40rem;
+    }
+  }
+}

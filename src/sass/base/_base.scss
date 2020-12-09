@@ -70,3 +70,28 @@ body::-webkit-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.btn {
+  &--primary {
+    background-color: $orange-dark;
+    color: $whiteness;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: $orange-light;
+    }
+  }
+
+  &--small {
+    width: 4rem;
+    height: 4rem;
+    svg {
+      fill: $whiteness;
+    }
+  }
+}

@@ -2,7 +2,7 @@
   @for $i from 1 through 12 {
     .col-#{$prefix}-#{$i} {
       $width: 100% / 12 * $i;
-      flex: 0 0 $width;
+      flex: 1 1 $width;
       max-width: $width;
     }
   }
@@ -20,6 +20,35 @@
   z-index: 999999;
 }
 
+@mixin chart-btn($color) {
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  border-radius: 0.3rem;
+  @include mobile {
+    padding: 0.5rem 1rem;
+  }
+
+  &:hover {
+    background-color: $grey-low-value;
+  }
+
+  .btn--dot {
+    width: 2rem;
+    height: 2rem;
+    background-color: $color;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  .btn--name {
+    color: $grey-high-value;
+    font-weight: $font-light;
+  }
+}
+
 @mixin mobile {
   @media (max-width: 567px) and (min-height: 415px) {
     @content;
@@ -33,7 +62,7 @@
 }
 
 @mixin tablet {
-  @media (min-height: 415px) and (max-width: 1024px) {
+  @media (min-height: 415px) and (min-width: 568px) and (max-width: 1024px) {
     @content;
   }
 }
