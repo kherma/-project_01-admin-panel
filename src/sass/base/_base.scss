@@ -94,4 +94,10 @@ body::-webkit-scrollbar {
       fill: $whiteness;
     }
   }
+
+  &--large {
+    width: 12rem;
+    height: 4rem;
+    margin: 1rem auto;
+  }
 }

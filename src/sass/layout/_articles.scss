@@ -28,14 +28,14 @@
   .article__section {
     border-bottom: 1px solid $grey-low-value;
     padding: 1.5rem 0;
-
-    .article--center {
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-      overflow: hidden;
-    }
   }
+}
+
+.article--center {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .article__section:last-child {
