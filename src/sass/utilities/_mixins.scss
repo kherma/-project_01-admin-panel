@@ -21,19 +21,13 @@
 }
 
 @mixin mobile {
-  @media (max-width: 767px) and (min-height: 415px) {
+  @media (max-width: 567px) and (min-height: 415px) {
     @content;
   }
 }
 
 @mixin mobile-landscape {
-  @media (min-width: 568px) and (max-height: 414px) and (max-width: 767) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-height: 415px) and (min-width: 768px) and (max-width: 1024px) {
+  @media (max-height: 414px) and (max-width: 767px) and (orientation: landscape) {
     @content;
   }
 }
