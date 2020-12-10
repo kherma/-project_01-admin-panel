@@ -17,7 +17,7 @@
   border-radius: 50%;
   top: 0;
   right: 0;
-  z-index: 999999;
+  z-index: 10;
 }
 
 @mixin chart-btn($color) {
